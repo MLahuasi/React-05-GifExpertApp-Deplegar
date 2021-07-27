@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GitGridItem.js Debe mostrar el componente correctamente 1`] = `
+<div
+  className="card animate__animated animate__bounce"
+>
+  <img
+    alt="Dragon Ball GIF by TOEI Animation UK"
+    src="https://media4.giphy.com/media/aAbax5anloMNk6TSP9/giphy.gif?cid=85b515a5vue5x4b3l0v8zlb9ilfhqx9bx707skt72x36dyn5&rid=giphy.gif&ct=g"
+  />
+  <p>
+    Dragon Ball GIF by TOEI Animation UK
+  </p>
+</div>
+`;
