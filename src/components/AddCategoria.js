@@ -7,10 +7,14 @@ export const AddCategoria = ({ setCategorias }) => {
 
     const handleInputChange = ( e ) => {
         setInputValue(e.target.value); //Escribe en la caja de texto
+
+        console.log('handleInputChange llamado...');
     };
 
     const handleSubmit = (e) => {
         e.preventDefault(); //Previene el refresh de la página
+
+        console.log('handleSubmit llamado...', inputValue);
 
         if( inputValue.trim().length > 2 ){
             setCategorias(cats => [inputValue, ...cats ]);
@@ -20,6 +24,7 @@ export const AddCategoria = ({ setCategorias }) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <p> { inputValue }</p>
             <input
                 type="text"
                 value={inputValue}
