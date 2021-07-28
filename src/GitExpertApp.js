@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { AddCategoria } from './components/AddCategoria';
 import { GifGrid } from './components/GifGrid';
 
-const GitExpertApp = () => {
+const GitExpertApp = ( { defaultCategorias = [] } ) => {
      //Cargar categorías para que sean renderizadas por React
-    const [categorias, setCategorias] = useState(['Dragon Ball']);
+    //const [categorias, setCategorias] = useState(['Dragon Ball']);
+    const [categorias, setCategorias] = useState(defaultCategorias);
     return (
         <>
             <h1>GitExpertApp</h1>

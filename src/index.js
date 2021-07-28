@@ -5,6 +5,6 @@ import GitExpertApp from './GitExpertApp';
 import './index.css';
 
 ReactDOM.render(
-  <GitExpertApp />,
+  <GitExpertApp defaultCategorias={['metallica', 'iron maiden', 'megadeth']} />,
   document.getElementById('root')
 );

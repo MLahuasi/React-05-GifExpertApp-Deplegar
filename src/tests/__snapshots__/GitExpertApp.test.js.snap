@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GitExpertApp Debe mostrar una lista de categorias 1`] = `
+<Fragment>
+  <h1>
+    GitExpertApp
+  </h1>
+  <AddCategoria
+    setCategorias={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      categoria="metallica"
+      key="metallica"
+    />
+    <GifGrid
+      categoria="iron maiden"
+      key="iron maiden"
+    />
+    <GifGrid
+      categoria="megadeth"
+      key="megadeth"
+    />
+  </ol>
+</Fragment>
+`;
+
+exports[`Test GitExpertApp Debe realizar una captura  1`] = `
+<Fragment>
+  <h1>
+    GitExpertApp
+  </h1>
+  <AddCategoria
+    setCategorias={[Function]}
+  />
+  <hr />
+  <ol />
+</Fragment>
+`;
