@@ -49,3 +49,35 @@ exports[`Test GifGrid Deben mostrase Items cuando se cragan las imágenes [useFe
   </div>
 </Fragment>
 `;
+
+exports[`Test GifGrid Deben mostrase Items cuando se cragan las imágenes [useFetchGifs] SIN SnapShot 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    MCU
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GitGridItem
+      id="4"
+      key="4"
+      title="JKL"
+      url="https://localhost/imagen4.jpg"
+    />
+    <GitGridItem
+      id="5"
+      key="5"
+      title="MNO"
+      url="https://localhost/imagen5.jpg"
+    />
+    <GitGridItem
+      id="6"
+      key="6"
+      title="PQR"
+      url="https://localhost/imagen6.jpg"
+    />
+  </div>
+</Fragment>
+`;

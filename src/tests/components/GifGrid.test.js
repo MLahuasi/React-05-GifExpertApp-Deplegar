@@ -63,5 +63,38 @@ describe('Test GifGrid', () => {
         expect( wrapper ).toMatchSnapshot();
     });
 
+    test('Deben mostrase Items cuando se cragan las imágenes [useFetchGifs] SIN SnapShot', () => {
+
+        const gifs = [
+            {
+                id: '4',
+                title: 'JKL',
+                url: 'https://localhost/imagen4.jpg'
+            },
+            {
+                id: '5',
+                title: 'MNO',
+                url: 'https://localhost/imagen5.jpg'
+            },
+            {
+                id: '6',
+                title: 'PQR',
+                url: 'https://localhost/imagen6.jpg'
+            }
+        ];
+
+        //Invocar al mock
+        useFetchGifs.mockReturnValue({
+            data: gifs,
+            loading: false
+        });
+
+        const wrapper = shallow(<GifGrid categoria={categoria} />);
+
+        expect(wrapper).toMatchSnapshot();
+        expect( wrapper.find('p').exists() ).toBe(false);
+        //Existen 3 elementos de tipo GitGridItem
+        expect(wrapper.find('GitGridItem').length).toBe( gifs.length );
+    });
 
 })
