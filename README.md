@@ -33,6 +33,8 @@ En esta sección seguiremos expandiendo todo lo que habíamos visto anteriorment
 
 ```
     - Desplegar [npm run build]
+    - Para instalar el Pk para pruebas de Hooks instalar el siguiente comando [npm install --save-dev @testing-library/react-hooks]
+
 
 ```
 
@@ -40,6 +42,7 @@ En esta sección seguiremos expandiendo todo lo que habíamos visto anteriorment
 ```
     - Servidor NodeJs: [https://www.npmjs.com/package/http-server]
     - Tutorial JEST: [https://jestjs.io/es-ES/docs/using-matchers]
+    - Test Hooks: [https://react-hooks-testing-library.com/]
 
 
 ```
